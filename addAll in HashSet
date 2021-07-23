@@ -1,0 +1,42 @@
+package com.company;
+
+import com.sun.jdi.Value;
+
+import java.util.*;
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner in=new Scanner(System.in);
+        HashSet<Integer>set1=new HashSet<Integer>();
+        System.out.print("Enter the size of the Set 1 : ");
+        int size=in.nextInt();
+        System.out.println("Enter the elements  ");
+        for(int i=0;i<size;i++)
+        {
+            set1.add(in.nextInt());
+        }
+        HashSet<Integer>set2=new HashSet<Integer>();
+        System.out.print("Enter the size of the Set 2 : ");
+        int sizes=in.nextInt();
+        System.out.println("Enter the elements  ");
+        for(int i=0;i<sizes;i++)
+        {
+            set2.add(in.nextInt());
+        }
+        System.out.println("The Set 1 is "+set1);
+        System.out.println("The Set 2 is "+set2);
+        set1.addAll(set2);
+        System.out.println("The Set after concatenation is  "+set1);
+
+    }
+
+}
+
+
+
+
+
+
+
